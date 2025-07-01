@@ -15,6 +15,11 @@ Reiniciar de forma segura un nodo sin perder disponibilidad de los servicios.
 ```bash
 kubectl get nodes -o wide
 kubectl get pods -A -o wide
+
+NAME                   STATUS   ROLES    AGE     VERSION   INTERNAL-IP   EXTERNAL-IP      OS-IMAGE                         KERNEL-VERSION   CONTAINER-RUNTIME
+pool-pl8qpi0aj-lqfwl   Ready    <none>   9m19s   v1.33.1   10.114.0.3    164.90.218.50    Debian GNU/Linux 12 (bookworm)   6.1.0-35-amd64   containerd://1.6.33
+pool-pl8qpi0aj-lqfwt   Ready    <none>   8m47s   v1.33.1   10.114.0.4    207.154.206.96   Debian GNU/Linux 12 (bookworm)   6.1.0-35-amd64   containerd://1.6.33
+
 ```
 
 ---
@@ -26,6 +31,11 @@ Se evita que el nodo reciba nuevos pods.
 ```bash
 kubectl cordon pool-pl8qpi0aj-lqfwt
 ```
+PS C:\Users\0020360\Documents\DEVOPS\JORGE2025\kubernetes\administracion\reinicio_nodo> kubectl get nodes -o wide          
+NAME                   STATUS                     ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP      OS-IMAGE                         KERNEL-VERSION   CONTAINER-RUNTIME
+pool-pl8qpi0aj-lqfwl   Ready                      <none>   11m   v1.33.1   10.114.0.3    164.90.218.50    Debian GNU/Linux 12 (bookworm)   6.1.0-35-amd64   containerd://1.6.33
+pool-pl8qpi0aj-lqfwt   Ready,SchedulingDisabled   <none>   11m   v1.33.1   10.114.0.4    207.154.206.96   Debian GNU/Linux 12 (bookworm)   6.1.0-35-amd64   containerd://1.6.33
+
 
 ---
 
