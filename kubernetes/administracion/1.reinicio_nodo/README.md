@@ -7,7 +7,7 @@ Este laboratorio documenta el proceso para realizar un reinicio controlado de un
 ## 🔧 Objetivo
 
 Reiniciar de forma segura un nodo sin perder disponibilidad de los servicios.
-
+ANTES DE COMENZAR: Desplegar las aplicaciones con el fichero deploys.yaml
 ---
 
 ## 🗂️ Estado Inicial del Clúster
